@@ -1,0 +1,39 @@
+{
+  "name": "@mediacodex/datacore",
+  "private": true,
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/MediaCodex/datacore.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MediaCodex/datacore/issues"
+  },
+  "homepage": "https://github.com/MediaCodex/datacore#readme",
+  "scripts": {
+    "migrate:up": "npx sequelize-cli db:migrate",
+    "migrate:undo": "npx sequelize-cli db:migrate:undo"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.15.0",
+    "@types/koa__router": "^12.0.4",
+    "@types/node": "^22.10.3",
+    "@types/sequelize": "^4.28.20",
+    "@types/validator": "^13.12.2",
+    "dotenv": "^16.4.7",
+    "sequelize-cli": "^6.6.2",
+    "sequelize-cli-typescript": "^3.2.0-c",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@koa/bodyparser": "^5.1.1",
+    "@koa/router": "^13.1.0",
+    "koa": "^2.15.3",
+    "pg": "^8.13.1",
+    "pg-hstore": "^2.3.4",
+    "reflect-metadata": "^0.2.2",
+    "sequelize": "^6.37.5",
+    "sequelize-typescript": "^2.1.6",
+    "zod": "^3.24.1"
+  }
+}
